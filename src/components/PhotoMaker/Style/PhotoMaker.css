@@ -1,0 +1,66 @@
+.photoCont{
+    color: white;
+    width: 100%;
+    min-height: 65vh;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+.photoCont:hover{
+    background: rgba(250, 250, 250, .2);
+}
+
+.photoCont .err{
+    min-width: 65vh;
+    height: 65vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photoCont .err .videoCont{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    width: 65vh;
+    height: 65vh;
+}
+
+.photoCont .err .videoCont video{
+    width: 100%;
+    height: 100%;
+}
+
+.photoCont .err .videoCont .tkPhoto{
+    min-width: 30%;
+    height: 30px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.photoCont .err .videoCont .tkPhoto:hover{
+    color: rgba(120, 230, 250);
+    background: rgba(120, 230, 250, .3);
+    box-shadow: 0px 0px 30px rgba(120, 230, 250);
+    border-color: rgba(120, 230, 250);
+}
+
+.photoCont .photoCanv{
+    display: none;
+    background: black;
+}

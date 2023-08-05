@@ -1,0 +1,30 @@
+.chargeImageCont{
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    width: 90%;
+    min-height: 80%;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 1s;
+    border-radius: 20px;
+    justify-content: center;
+    background: rgb(0, 0, 0, .2);
+}
+
+.chargeImageCont:hover{
+    border: 1px solid white;
+    box-shadow: 0px 0px 30px white;
+    background: rgba(250, 250, 250, .2);
+}
+
+.chargeImageCont .loadTitle{
+    width: 100%;
+    text-align: center;
+}
+
+.chargeImageCont:hover .loadTitle{
+    text-shadow: 0px 0px 10px rgb(120, 230, 250);
+    color: rgb(120, 230, 250);
+}

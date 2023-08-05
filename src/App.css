@@ -1,0 +1,150 @@
+@keyframes colors {
+  0%{ 
+      border-image: -webkit-linear-gradient(to right, blue, red, yellow, orange, greenyellow) 1;
+      border-image: linear-gradient(to right, blue, red, yellow, orange, greenyellow) 1;
+  }
+  20%{ 
+      border-image: linear-gradient(to right, red, yellow, orange, greenyellow, aqua) 1;
+      border-image: -webkit-linear-gradient(to right, red, yellow, orange, greenyellow, aqua) 1;
+  }
+  40%{ 
+      border-image: linear-gradient(to right, yellow, orange, greenyellow, aqua, blue) 1;
+      border-image: -webkit-linear-gradient(to right, yellow, orange, greenyellow, aqua, blue) 1;
+  }
+  60%{
+      border-image: linear-gradient(to right, orange, greenyellow, aqua, blue, red) 1;
+      border-image: -webkit-linear-gradient(to right, orange, greenyellow, aqua, blue, red) 1;
+  }
+  80%{
+      border-image: linear-gradient(to right, greenyellow, aqua, blue, red, yellow) 1;
+      border-image: -webkit-linear-gradient(to right, greenyellow, aqua, blue, red, yellow) 1;
+  }
+  100%{
+      border-image: linear-gradient(to right, aqua, blue, red, yellow, orange) 1;
+      border-image: -webkit-linear-gradient(to right, aqua, blue, red, yellow, orange) 1;
+  }
+}
+
+@keyframes colorsB {
+  0%{ 
+      background: linear-gradient(to right, blue, red, yellow, orange, greenyellow);
+      background: -webkit-linear-gradient(to right, blue, red, yellow, orange, greenyellow);
+  }
+  20%{ 
+      background: linear-gradient(to right, red, yellow, orange, greenyellow, aqua);
+      background: -webkit-linear-gradient(to right, red, yellow, orange, greenyellow, aqua);
+  }
+  40%{ 
+      background: linear-gradient(to right, yellow, orange, greenyellow, aqua, blue);
+      background: -webkit-linear-gradient(to right, yellow, orange, greenyellow, aqua, blue);
+  }
+  60%{
+      background: linear-gradient(to right, orange, greenyellow, aqua, blue, red);
+      background: -webkit-linear-gradient(to right, orange, greenyellow, aqua, blue, red);
+  }
+  80%{
+      background: linear-gradient(to right, greenyellow, aqua, blue, red, yellow);
+      background: -webkit-linear-gradient(to right, greenyellow, aqua, blue, red, yellow);
+  }
+  100%{
+      background: linear-gradient(to right, aqua, blue, red, yellow, orange);
+      background: -webkit-linear-gradient(to right, aqua, blue, red, yellow, orange);
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html, body{
+  /*background: linear-gradient(to right, rgb(70, 72, 218), #8901ff, #9148d1);
+  background: -webkit-linear-gradient(to right, rgb(70, 72, 218), #8901ff, #9148d1);*/
+  /*background: linear-gradient(45deg, rgb(2, 78, 243), rgb(0, 162, 255));
+  background: -webkit-linear-gradient(45deg, rgb(2, 78, 243), rgb(0, 162, 255));*/
+  /*background: rgba(43, 43, 180);*/
+  background: rgb(70, 70, 120);
+  font-family: sans-serif;
+  color: white;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.App{
+  transition: .5s;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex: auto;
+  white-space:normal ;
+}
+
+.App nav {
+  width: 100%;
+  height: 50px;
+  background: rgb(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0%;
+  transition: 1s;
+  border-bottom: 2px solid transparent;
+}
+
+.App nav *{
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+.App nav .links {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: capitalize;
+}
+
+.App nav .links li:hover {
+  background: rgba(120, 230, 250, .2);
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px rgba(120, 230, 250, .5);
+  text-shadow: 0px 0px 10px rgba(120, 230, 250);
+}
+
+.App nav:hover {
+  animation-name: colors;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  box-shadow: 0px 0px 30px white;
+}
+
+::-webkit-scrollbar{
+  width: .7vw;
+  height: 100vh;
+}
+
+::-webkit-scrollbar-track{
+  background: transparent;
+  margin-block: 5px;
+  border-radius: 20px;
+  visibility: hidden;
+}
+
+::-webkit-scrollbar-thumb{
+  background: grey;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  /*background: red;*/
+  background: linear-gradient( red, yellow, green, blue, black);
+  background: -webkit-linear-gradient( red, yellow, green, blue, black);
+}

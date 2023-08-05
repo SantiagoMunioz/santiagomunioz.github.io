@@ -1,0 +1,46 @@
+.upImage{
+    color: white;
+    width: 100%;
+    min-height: 65vh;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2%;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+.upImage:hover{
+    background: rgba(250, 250, 250, .2);
+}
+
+.upImage .imageInput{
+    border-bottom: 2px solid white;
+    width: 45%;
+    height: 10%;
+}
+
+.upImage .imageInput,
+.upImage .imageInput::-webkit-file-upload-button{
+    cursor: cell;
+    font-weight: bold;
+    color: white;
+    transition: .5s;
+    font-size: 1.2rem;
+}
+
+.upImage .imageInput::-webkit-file-upload-button{
+    top: 2%;
+    background: transparent;
+    border: none;
+}
+
+.upImage .imageInput::-webkit-file-upload-button:hover{
+    color: rgba(120, 230, 250);
+}
+
+.upImage .imageInput:hover{
+    border-bottom: 2px solid #03e9f4;
+}

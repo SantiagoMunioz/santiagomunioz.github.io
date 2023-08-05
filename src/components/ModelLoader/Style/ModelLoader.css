@@ -1,0 +1,50 @@
+.modelCont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    padding: 2%;
+    min-width: 40vh;
+    min-height: 80%;
+    transition: 1s;
+    border-radius: 15px;
+}
+
+.modelCont:hover{
+    background: rgba(120, 230, 250, .2);
+}
+
+.modelCont:hover .titleResult{
+    text-shadow: 0px 0px 10px rgb(120, 230, 250);
+    color: rgb(120, 230, 250);
+}
+
+.modelCont .titleResult{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.modelCont hr{
+    width: 100%;
+    height: .5vh;
+    background: white;
+}
+
+.modelCont .modelCanv{
+    width: 50vh;
+    height: 50vh;
+    border-radius: 15px;
+}
+
+.modelCont .modelCanvRslt{
+    display: none;
+}
+
+.modelCont .rslt{
+    text-transform: capitalize;
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+}
